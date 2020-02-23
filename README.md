@@ -13,7 +13,7 @@ Libraries used - To succesfully run this Jupyter notebook the following librarie
     - Numpy
     
 
-## Motivation for the project
+## Motivation 
 
 I found the imbalanced dataset problem interesting and challenging.  That’s the motivation behind selecting this topic for my first DS project. In real life, imbalanced dataset problem affects different businesses spanning from cybersecurity, financial institutions and industrial or medical diagnosis. Credit card fraud detection is an important issue in the bankind sector. 
 
@@ -32,20 +32,19 @@ Fraud_detection_Report.pdf - I have writted review report and results are presen
 
 **Dataset :** Credit card dataset presents transactions that occurred in two days, where there are 492 frauds out of 284,807 transactions. 
 
-## Summary of results 
+## Results & Conclusions
 
-. Train split random seed () options affects the results.
-. class_weight= option for the classifier works like resampling. 
-. Feature scaling was applied to scale Time and the amount. However, V1-V27 features were within a scale. 
-. Grid search helped in obtaining best parameters. 
-. Applying learning algorithms and/or resampling techniques showed that depending on the metrics different results are obtained. 
-  Defining metrics depending on the business problem to be solved.  
-. Credit cards are main source of transactions for any bank customers. Thus, if our fraud detection model blocks non frudelent transaction
-  the customer complaints and customer dissatisfaction will increase. Thus, the metric used for fraud detection should be accuracy of
+- Train split random seed () options affects the results.
+- class_weight= option for the classifier works like resampling. 
+- Feature scaling was applied to scale Time and the amount. However, V1-V27 features were within a scale. 
+- Grid search helped in obtaining best parameters. 
+- Applying learning algorithms and/or resampling techniques showed that depending on the metrics different results are obtained. 
+  and defining metrics depends on the business problem to be solved.  
+- Credit cards are main source of transactions for any bank customers. Thus, if our fraud detection model blocks non frudelent transaction
+- the customer complaints and customer dissatisfaction will increase. Thus, the metric used for fraud detection should be accuracy of
   classifying non-fraud cases then the recall score. The cost of mis-classifying actual positive is very high. 
-. Random Forest model performed better in both cases with and without applying Synthetic Minority Oversampling Technique (SMOTE ).
-. Gradient boosting algorithm performed better only with the SMOTE sampling technique.
-. All advanced models’ performance is comparable when applied re-sampling technique with a AUC score 0.99.
+  Gradient boosting algorithm performed better only with the SMOTE sampling technique.
+  All advanced ensemble models’ performance is comparable when applied re-sampling technique with a AUC score above 0.99.
 
 
 
