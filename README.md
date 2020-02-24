@@ -46,6 +46,8 @@ Fraud_detection_Report.pdf - I have writted review report and results are presen
   Gradient boosting algorithm performed better only with the SMOTE sampling technique.
   All advanced ensemble models’ performance is comparable when applied re-sampling technique with a AUC score above 0.99.
 
+  Please see the Fraud_Detection_Report in the root directory for the review, results and conclusions.
+
 
 
 
